@@ -1,0 +1,49 @@
+{
+    "game_code": "LOW_VOL_SLOTS",
+    "game_name": "Low Volatility Slots",
+    "description": "A conservative slots configuration with lower denominations (1-5) and modest line counts (10-30). Features a narrow, higher RTP range (90.50-94.50%) and small cycle size of 100, perfect for risk-averse players who prefer frequent small wins and extended playing sessions with minimal bankroll fluctuation.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 100
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [10, 20, 30]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 2, 5],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 3,
+      "bet_button_max_count": 3,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 3]
+    },
+    "rtp": [
+      {"id": "90", "min_ret": "90.50", "max_ret": "90.50", "weight": 20},
+      {"id": "91", "min_ret": "91.50", "max_ret": "91.50", "weight": 20},
+      {"id": "92", "min_ret": "92.50", "max_ret": "92.50", "weight": 25},
+      {"id": "93", "min_ret": "93.50", "max_ret": "93.50", "weight": 20},
+      {"id": "94", "min_ret": "94.50", "max_ret": "94.50", "weight": 15}
+    ],
+    "bets": [
+      {"id": "1_1", "lines": 30, "bpl": 1, "denom": 1},
+      {"id": "1_2", "lines": 30, "bpl": 2, "denom": 1},
+      {"id": "1_3", "lines": 30, "bpl": 3, "denom": 1},
+      {"id": "2_1", "lines": 20, "bpl": 1, "denom": 2},
+      {"id": "2_2", "lines": 20, "bpl": 2, "denom": 2},
+      {"id": "2_3", "lines": 20, "bpl": 3, "denom": 2},
+      {"id": "5_1", "lines": 10, "bpl": 1, "denom": 5},
+      {"id": "5_2", "lines": 10, "bpl": 2, "denom": 5},
+      {"id": "5_3", "lines": 10, "bpl": 3, "denom": 5}
+    ]
+}

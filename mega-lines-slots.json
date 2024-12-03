@@ -1,0 +1,56 @@
+{
+    "game_code": "MEGA_LINES_SLOTS",
+    "game_name": "Mega Lines Slots",
+    "description": "Features an extensive payline system with 100-300 lines, offering maximum winning opportunities. With moderate denominations (1-10) and a balanced RTP range (89.25-97.25%), this configuration provides an engaging experience for players who enjoy complex winning combinations and frequent hits across multiple lines.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 250
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [100, 200, 300]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 2, 5, 10],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 4,
+      "bet_button_max_count": 4,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 3, 5]
+    },
+    "rtp": [
+      {"id": "89", "min_ret": "89.25", "max_ret": "89.25", "weight": 38},
+      {"id": "91", "min_ret": "91.25", "max_ret": "91.25", "weight": 53},
+      {"id": "93", "min_ret": "93.25", "max_ret": "93.25", "weight": 68},
+      {"id": "95", "min_ret": "95.25", "max_ret": "95.25", "weight": 53},
+      {"id": "97", "min_ret": "97.25", "max_ret": "97.25", "weight": 38}
+    ],
+    "bets": [
+      {"id": "1_1", "lines": 300, "bpl": 1, "denom": 1},
+      {"id": "1_2", "lines": 300, "bpl": 2, "denom": 1},
+      {"id": "1_3", "lines": 300, "bpl": 3, "denom": 1},
+      {"id": "1_5", "lines": 300, "bpl": 5, "denom": 1},
+      {"id": "2_1", "lines": 200, "bpl": 1, "denom": 2},
+      {"id": "2_2", "lines": 200, "bpl": 2, "denom": 2},
+      {"id": "2_3", "lines": 200, "bpl": 3, "denom": 2},
+      {"id": "2_5", "lines": 200, "bpl": 5, "denom": 2},
+      {"id": "5_1", "lines": 100, "bpl": 1, "denom": 5},
+      {"id": "5_2", "lines": 100, "bpl": 2, "denom": 5},
+      {"id": "5_3", "lines": 100, "bpl": 3, "denom": 5},
+      {"id": "5_5", "lines": 100, "bpl": 5, "denom": 5},
+      {"id": "10_1", "lines": 100, "bpl": 1, "denom": 10},
+      {"id": "10_2", "lines": 100, "bpl": 2, "denom": 10},
+      {"id": "10_3", "lines": 100, "bpl": 3, "denom": 10},
+      {"id": "10_5", "lines": 100, "bpl": 5, "denom": 10}
+    ]
+}

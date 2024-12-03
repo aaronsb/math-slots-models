@@ -1,0 +1,56 @@
+{
+    "game_code": "TRUE_RANDOM_HIGH_STAKES",
+    "game_name": "True Random High Stakes",
+    "description": "A high stakes slot using true random mathematics with no predetermined cycles. Features high denominations (25-1000) and wide RTP range (85-98%). Designed for high-roller players seeking genuine random outcomes with every spin.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "TRUE_RANDOM"
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [10, 25, 50, 100]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [25, 50, 100, 250, 500, 1000],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 5,
+      "bet_button_max_count": 5,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 5, 10, 20]
+    },
+    "rtp": [
+      {"id": "85", "min_ret": "85.00", "max_ret": "85.00", "weight": 15},
+      {"id": "88", "min_ret": "88.00", "max_ret": "88.00", "weight": 20},
+      {"id": "91", "min_ret": "91.00", "max_ret": "91.00", "weight": 25},
+      {"id": "94", "min_ret": "94.00", "max_ret": "94.00", "weight": 20},
+      {"id": "96", "min_ret": "96.00", "max_ret": "96.00", "weight": 15},
+      {"id": "98", "min_ret": "98.00", "max_ret": "98.00", "weight": 5}
+    ],
+    "bets": [
+      {"id": "25_1_10", "lines": 10, "bpl": 1, "denom": 25},
+      {"id": "25_2_10", "lines": 10, "bpl": 2, "denom": 25},
+      {"id": "25_5_10", "lines": 10, "bpl": 5, "denom": 25},
+      {"id": "25_10_10", "lines": 10, "bpl": 10, "denom": 25},
+      {"id": "50_1_25", "lines": 25, "bpl": 1, "denom": 50},
+      {"id": "50_2_25", "lines": 25, "bpl": 2, "denom": 50},
+      {"id": "50_5_25", "lines": 25, "bpl": 5, "denom": 50},
+      {"id": "100_1_50", "lines": 50, "bpl": 1, "denom": 100},
+      {"id": "100_2_50", "lines": 50, "bpl": 2, "denom": 100},
+      {"id": "100_5_50", "lines": 50, "bpl": 5, "denom": 100},
+      {"id": "250_1_50", "lines": 50, "bpl": 1, "denom": 250},
+      {"id": "250_2_50", "lines": 50, "bpl": 2, "denom": 250},
+      {"id": "500_1_100", "lines": 100, "bpl": 1, "denom": 500},
+      {"id": "500_2_100", "lines": 100, "bpl": 2, "denom": 500},
+      {"id": "1000_1_100", "lines": 100, "bpl": 1, "denom": 1000},
+      {"id": "1000_2_100", "lines": 100, "bpl": 2, "denom": 1000}
+    ]
+}

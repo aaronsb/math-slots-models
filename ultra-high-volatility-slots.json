@@ -1,0 +1,91 @@
+{
+    "game_code": "ULTRA_HIGH_VOL_SLOTS",
+    "game_name": "Ultra High Volatility Slots",
+    "description": "High stakes and volatility configuration featuring denominations (5-500), extensive line range (10-150), and the widest RTP spread (82-99%). With a cycle size of 500, this game is designed for high-roller players seeking maximum thrill and potential returns.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 500
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [10, 25, 50, 100, 150]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [5, 10, 25, 50, 100, 200, 500],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 6,
+      "bet_button_max_count": 6,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 5, 10, 20, 50]
+    },
+    "rtp": [
+      {"id": "82", "min_ret": "82.00", "max_ret": "82.00", "weight": 48},
+      {"id": "85", "min_ret": "85.00", "max_ret": "85.00", "weight": 71},
+      {"id": "88", "min_ret": "88.00", "max_ret": "88.00", "weight": 95},
+      {"id": "92", "min_ret": "92.00", "max_ret": "92.00", "weight": 119},
+      {"id": "95", "min_ret": "95.00", "max_ret": "95.00", "weight": 95},
+      {"id": "98", "min_ret": "98.00", "max_ret": "98.00", "weight": 48},
+      {"id": "99", "min_ret": "99.00", "max_ret": "99.00", "weight": 24}
+    ],
+    "bets": [
+      {"id": "5_1_10", "lines": 10, "bpl": 1, "denom": 5},
+      {"id": "5_2_10", "lines": 10, "bpl": 2, "denom": 5},
+      {"id": "5_5_10", "lines": 10, "bpl": 5, "denom": 5},
+      {"id": "5_1_25", "lines": 25, "bpl": 1, "denom": 5},
+      {"id": "5_2_25", "lines": 25, "bpl": 2, "denom": 5},
+      {"id": "5_1_50", "lines": 50, "bpl": 1, "denom": 5},
+      {"id": "10_1_10", "lines": 10, "bpl": 1, "denom": 10},
+      {"id": "10_2_10", "lines": 10, "bpl": 2, "denom": 10},
+      {"id": "10_5_10", "lines": 10, "bpl": 5, "denom": 10},
+      {"id": "10_1_25", "lines": 25, "bpl": 1, "denom": 10},
+      {"id": "10_2_25", "lines": 25, "bpl": 2, "denom": 10},
+      {"id": "25_1_10", "lines": 10, "bpl": 1, "denom": 25},
+      {"id": "25_2_10", "lines": 10, "bpl": 2, "denom": 25},
+      {"id": "25_1_25", "lines": 25, "bpl": 1, "denom": 25},
+      {"id": "50_1_10", "lines": 10, "bpl": 1, "denom": 50},
+      {"id": "50_2_10", "lines": 10, "bpl": 2, "denom": 50},
+      {"id": "100_1_10", "lines": 10, "bpl": 1, "denom": 100},
+      {"id": "200_1_10", "lines": 10, "bpl": 1, "denom": 200},
+      {"id": "500_1_10", "lines": 10, "bpl": 1, "denom": 500},
+      {"id": "25_1", "lines": 50, "bpl": 1, "denom": 25},
+      {"id": "25_2", "lines": 50, "bpl": 2, "denom": 25},
+      {"id": "25_5", "lines": 50, "bpl": 5, "denom": 25},
+      {"id": "25_10", "lines": 50, "bpl": 10, "denom": 25},
+      {"id": "25_20", "lines": 50, "bpl": 20, "denom": 25},
+      {"id": "25_50", "lines": 50, "bpl": 50, "denom": 25},
+      {"id": "50_1", "lines": 50, "bpl": 1, "denom": 50},
+      {"id": "50_2", "lines": 50, "bpl": 2, "denom": 50},
+      {"id": "50_5", "lines": 50, "bpl": 5, "denom": 50},
+      {"id": "50_10", "lines": 50, "bpl": 10, "denom": 50},
+      {"id": "50_20", "lines": 50, "bpl": 20, "denom": 50},
+      {"id": "50_50", "lines": 50, "bpl": 50, "denom": 50},
+      {"id": "100_1", "lines": 50, "bpl": 1, "denom": 100},
+      {"id": "100_2", "lines": 50, "bpl": 2, "denom": 100},
+      {"id": "100_5", "lines": 50, "bpl": 5, "denom": 100},
+      {"id": "100_10", "lines": 50, "bpl": 10, "denom": 100},
+      {"id": "100_20", "lines": 50, "bpl": 20, "denom": 100},
+      {"id": "100_50", "lines": 50, "bpl": 50, "denom": 100},
+      {"id": "200_1", "lines": 50, "bpl": 1, "denom": 200},
+      {"id": "200_2", "lines": 50, "bpl": 2, "denom": 200},
+      {"id": "200_5", "lines": 50, "bpl": 5, "denom": 200},
+      {"id": "200_10", "lines": 50, "bpl": 10, "denom": 200},
+      {"id": "200_20", "lines": 50, "bpl": 20, "denom": 200},
+      {"id": "200_50", "lines": 50, "bpl": 50, "denom": 200},
+      {"id": "500_1", "lines": 50, "bpl": 1, "denom": 500},
+      {"id": "500_2", "lines": 50, "bpl": 2, "denom": 500},
+      {"id": "500_5", "lines": 50, "bpl": 5, "denom": 500},
+      {"id": "500_10", "lines": 50, "bpl": 10, "denom": 500},
+      {"id": "500_20", "lines": 50, "bpl": 20, "denom": 500},
+      {"id": "500_50", "lines": 50, "bpl": 50, "denom": 500}
+    ]
+}

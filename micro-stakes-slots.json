@@ -1,0 +1,52 @@
+{
+    "game_code": "MICRO_STAKES_SLOTS",
+    "game_name": "Micro Stakes Slots",
+    "description": "Perfect for casual players, featuring very low denominations (0.1-1) and small line counts (5-15). With higher RTPs (92.75-96.75%) and a small cycle size of 75, this configuration provides frequent wins and extended gameplay for minimal investment, ideal for newcomers or conservative players.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 75
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [5, 10, 15]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [0.1, 0.2, 0.5, 1],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 3,
+      "bet_button_max_count": 3,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 5]
+    },
+    "rtp": [
+      {"id": "92", "min_ret": "92.75", "max_ret": "92.75", "weight": 13},
+      {"id": "93", "min_ret": "93.75", "max_ret": "93.75", "weight": 15},
+      {"id": "94", "min_ret": "94.75", "max_ret": "94.75", "weight": 19},
+      {"id": "95", "min_ret": "95.75", "max_ret": "95.75", "weight": 15},
+      {"id": "96", "min_ret": "96.75", "max_ret": "96.75", "weight": 13}
+    ],
+    "bets": [
+      {"id": "0.1_1", "lines": 15, "bpl": 1, "denom": 0.1},
+      {"id": "0.1_2", "lines": 15, "bpl": 2, "denom": 0.1},
+      {"id": "0.1_5", "lines": 15, "bpl": 5, "denom": 0.1},
+      {"id": "0.2_1", "lines": 10, "bpl": 1, "denom": 0.2},
+      {"id": "0.2_2", "lines": 10, "bpl": 2, "denom": 0.2},
+      {"id": "0.2_5", "lines": 10, "bpl": 5, "denom": 0.2},
+      {"id": "0.5_1", "lines": 5, "bpl": 1, "denom": 0.5},
+      {"id": "0.5_2", "lines": 5, "bpl": 2, "denom": 0.5},
+      {"id": "0.5_5", "lines": 5, "bpl": 5, "denom": 0.5},
+      {"id": "1_1", "lines": 5, "bpl": 1, "denom": 1},
+      {"id": "1_2", "lines": 5, "bpl": 2, "denom": 1},
+      {"id": "1_5", "lines": 5, "bpl": 5, "denom": 1}
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "game_code": "CLASSIC_SLOTS",
+    "game_name": "Classic Slots",
+    "description": "A traditional slots experience with standard denominations (1-25) and conventional line structure (20-80). Features a balanced RTP range (88.50-96.50%) and moderate cycle size of 200, providing a familiar and comfortable gaming experience that appeals to traditional slot players seeking time-tested gameplay mechanics.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 200
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [20, 40, 80]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 5, 10, 25],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 4,
+      "bet_button_max_count": 4,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 5, 10]
+    },
+    "rtp": [
+      {"id": "88", "min_ret": "88.50", "max_ret": "88.50", "weight": 40},
+      {"id": "90", "min_ret": "90.50", "max_ret": "90.50", "weight": 40},
+      {"id": "92", "min_ret": "92.50", "max_ret": "92.50", "weight": 60},
+      {"id": "94", "min_ret": "94.50", "max_ret": "94.50", "weight": 40},
+      {"id": "96", "min_ret": "96.50", "max_ret": "96.50", "weight": 20}
+    ],
+    "bets": [
+      {"id": "1_1", "lines": 80, "bpl": 1, "denom": 1},
+      {"id": "1_2", "lines": 80, "bpl": 2, "denom": 1},
+      {"id": "1_5", "lines": 80, "bpl": 5, "denom": 1},
+      {"id": "1_10", "lines": 80, "bpl": 10, "denom": 1},
+      {"id": "5_1", "lines": 40, "bpl": 1, "denom": 5},
+      {"id": "5_2", "lines": 40, "bpl": 2, "denom": 5},
+      {"id": "5_5", "lines": 40, "bpl": 5, "denom": 5},
+      {"id": "5_10", "lines": 40, "bpl": 10, "denom": 5},
+      {"id": "10_1", "lines": 20, "bpl": 1, "denom": 10},
+      {"id": "10_2", "lines": 20, "bpl": 2, "denom": 10},
+      {"id": "10_5", "lines": 20, "bpl": 5, "denom": 10},
+      {"id": "10_10", "lines": 20, "bpl": 10, "denom": 10}
+    ]
+}

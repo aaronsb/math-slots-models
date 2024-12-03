@@ -1,0 +1,55 @@
+{
+    "game_code": "TRUE_RANDOM_PENNY_SLOTS",
+    "game_name": "True Random Penny Slots",
+    "description": "A penny slot machine using true random mathematics with no predetermined cycles. Features low denominations (1-10) and balanced RTP range (90-96%). Perfect for casual players who want genuine random outcomes with every spin while maintaining controlled spending.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "TRUE_RANDOM"
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [20, 40, 60, 80]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 2, 5, 10],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 4,
+      "bet_button_max_count": 4,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 3, 5]
+    },
+    "rtp": [
+      {"id": "90", "min_ret": "90.00", "max_ret": "90.00", "weight": 15},
+      {"id": "91", "min_ret": "91.50", "max_ret": "91.50", "weight": 20},
+      {"id": "93", "min_ret": "93.00", "max_ret": "93.00", "weight": 30},
+      {"id": "94", "min_ret": "94.50", "max_ret": "94.50", "weight": 20},
+      {"id": "96", "min_ret": "96.00", "max_ret": "96.00", "weight": 15}
+    ],
+    "bets": [
+      {"id": "1_1_20", "lines": 20, "bpl": 1, "denom": 1},
+      {"id": "1_2_20", "lines": 20, "bpl": 2, "denom": 1},
+      {"id": "1_3_20", "lines": 20, "bpl": 3, "denom": 1},
+      {"id": "1_5_20", "lines": 20, "bpl": 5, "denom": 1},
+      {"id": "1_1_40", "lines": 40, "bpl": 1, "denom": 1},
+      {"id": "1_2_40", "lines": 40, "bpl": 2, "denom": 1},
+      {"id": "1_3_40", "lines": 40, "bpl": 3, "denom": 1},
+      {"id": "2_1_40", "lines": 40, "bpl": 1, "denom": 2},
+      {"id": "2_2_40", "lines": 40, "bpl": 2, "denom": 2},
+      {"id": "2_3_40", "lines": 40, "bpl": 3, "denom": 2},
+      {"id": "5_1_60", "lines": 60, "bpl": 1, "denom": 5},
+      {"id": "5_2_60", "lines": 60, "bpl": 2, "denom": 5},
+      {"id": "5_3_60", "lines": 60, "bpl": 3, "denom": 5},
+      {"id": "10_1_80", "lines": 80, "bpl": 1, "denom": 10},
+      {"id": "10_2_80", "lines": 80, "bpl": 2, "denom": 10},
+      {"id": "10_3_80", "lines": 80, "bpl": 3, "denom": 10}
+    ]
+}

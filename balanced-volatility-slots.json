@@ -1,0 +1,65 @@
+{
+    "game_code": "BALANCED_VOL_SLOTS",
+    "game_name": "Balanced Volatility Slots",
+    "description": "A perfectly balanced configuration featuring binary-based denominations (1,2,4,8,16) and evenly weighted RTP distribution (90.80-98.80%). With moderate lines (40-80) and a balanced cycle size of 175, this game provides consistent gameplay with equal probability across all RTP levels, ideal for players seeking a stable and predictable experience.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 175
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [40, 60, 80]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 2, 4, 8, 16],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 5,
+      "bet_button_max_count": 5,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 2, 4, 6, 8]
+    },
+    "rtp": [
+      {"id": "90", "min_ret": "90.80", "max_ret": "90.80", "weight": 35},
+      {"id": "92", "min_ret": "92.80", "max_ret": "92.80", "weight": 35},
+      {"id": "94", "min_ret": "94.80", "max_ret": "94.80", "weight": 35},
+      {"id": "96", "min_ret": "96.80", "max_ret": "96.80", "weight": 35},
+      {"id": "98", "min_ret": "98.80", "max_ret": "98.80", "weight": 35}
+    ],
+    "bets": [
+      {"id": "1_1", "lines": 80, "bpl": 1, "denom": 1},
+      {"id": "1_2", "lines": 80, "bpl": 2, "denom": 1},
+      {"id": "1_4", "lines": 80, "bpl": 4, "denom": 1},
+      {"id": "1_6", "lines": 80, "bpl": 6, "denom": 1},
+      {"id": "1_8", "lines": 80, "bpl": 8, "denom": 1},
+      {"id": "2_1", "lines": 80, "bpl": 1, "denom": 2},
+      {"id": "2_2", "lines": 80, "bpl": 2, "denom": 2},
+      {"id": "2_4", "lines": 80, "bpl": 4, "denom": 2},
+      {"id": "2_6", "lines": 80, "bpl": 6, "denom": 2},
+      {"id": "2_8", "lines": 80, "bpl": 8, "denom": 2},
+      {"id": "4_1", "lines": 60, "bpl": 1, "denom": 4},
+      {"id": "4_2", "lines": 60, "bpl": 2, "denom": 4},
+      {"id": "4_4", "lines": 60, "bpl": 4, "denom": 4},
+      {"id": "4_6", "lines": 60, "bpl": 6, "denom": 4},
+      {"id": "4_8", "lines": 60, "bpl": 8, "denom": 4},
+      {"id": "8_1", "lines": 40, "bpl": 1, "denom": 8},
+      {"id": "8_2", "lines": 40, "bpl": 2, "denom": 8},
+      {"id": "8_4", "lines": 40, "bpl": 4, "denom": 8},
+      {"id": "8_6", "lines": 40, "bpl": 6, "denom": 8},
+      {"id": "8_8", "lines": 40, "bpl": 8, "denom": 8},
+      {"id": "16_1", "lines": 40, "bpl": 1, "denom": 16},
+      {"id": "16_2", "lines": 40, "bpl": 2, "denom": 16},
+      {"id": "16_4", "lines": 40, "bpl": 4, "denom": 16},
+      {"id": "16_6", "lines": 40, "bpl": 6, "denom": 16},
+      {"id": "16_8", "lines": 40, "bpl": 8, "denom": 16}
+    ]
+}

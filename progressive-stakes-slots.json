@@ -1,0 +1,57 @@
+{
+    "game_code": "PROGRESSIVE_STAKES_SLOTS",
+    "game_name": "Progressive Stakes Slots",
+    "description": "Features a unique geometric progression in denominations (1,3,9,27) and matching bet multipliers, creating an exponential betting structure. With moderate lines (25-75) and a balanced RTP range (91.33-96.33%), this configuration offers players an innovative betting system where each tier represents a significant jump in stakes and potential returns.",
+    "math_setting": {
+      "type": {
+        "name": "LINES",
+        "version": 1,
+        "model_type": "FINITE",
+        "cycle_size": 150
+      }
+    },
+    "line_settings": {
+      "type": "list_from_math_config",
+      "values": [25, 50, 75]
+    },
+    "total_bet_settings": {
+      "type": "computable"
+    },
+    "denomination_settings": {
+      "type": "range_by_math_config",
+      "values": [1, 3, 9, 27],
+      "useExtendedJurisdictionRatio": true
+    },
+    "bet_multiplier_per_denomination_settings": {
+      "bet_button_min_count": 4,
+      "bet_button_max_count": 4,
+      "type": "range_by_math_config",
+      "bet_button_values": [1, 3, 6, 9]
+    },
+    "rtp": [
+      {"id": "91", "min_ret": "91.33", "max_ret": "91.33", "weight": 23},
+      {"id": "92", "min_ret": "92.33", "max_ret": "92.33", "weight": 27},
+      {"id": "93", "min_ret": "93.33", "max_ret": "93.33", "weight": 31},
+      {"id": "94", "min_ret": "94.33", "max_ret": "94.33", "weight": 27},
+      {"id": "95", "min_ret": "95.33", "max_ret": "95.33", "weight": 23},
+      {"id": "96", "min_ret": "96.33", "max_ret": "96.33", "weight": 19}
+    ],
+    "bets": [
+      {"id": "1_1", "lines": 75, "bpl": 1, "denom": 1},
+      {"id": "1_3", "lines": 75, "bpl": 3, "denom": 1},
+      {"id": "1_6", "lines": 75, "bpl": 6, "denom": 1},
+      {"id": "1_9", "lines": 75, "bpl": 9, "denom": 1},
+      {"id": "3_1", "lines": 50, "bpl": 1, "denom": 3},
+      {"id": "3_3", "lines": 50, "bpl": 3, "denom": 3},
+      {"id": "3_6", "lines": 50, "bpl": 6, "denom": 3},
+      {"id": "3_9", "lines": 50, "bpl": 9, "denom": 3},
+      {"id": "9_1", "lines": 25, "bpl": 1, "denom": 9},
+      {"id": "9_3", "lines": 25, "bpl": 3, "denom": 9},
+      {"id": "9_6", "lines": 25, "bpl": 6, "denom": 9},
+      {"id": "9_9", "lines": 25, "bpl": 9, "denom": 9},
+      {"id": "27_1", "lines": 25, "bpl": 1, "denom": 27},
+      {"id": "27_3", "lines": 25, "bpl": 3, "denom": 27},
+      {"id": "27_6", "lines": 25, "bpl": 6, "denom": 27},
+      {"id": "27_9", "lines": 25, "bpl": 9, "denom": 27}
+    ]
+}
